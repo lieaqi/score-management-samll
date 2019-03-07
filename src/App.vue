@@ -1,17 +1,30 @@
 <script>
-	export default {
-		onLaunch: function () {
-			console.log('App Launch')
-		},
-		onShow: function () {
-			console.log('App Show')
-		},
-		onHide: function () {
-			console.log('App Hide')
-		}
-	}
+export default {
+  onLaunch: function() {
+    console.log("App Launch");
+  },
+  onShow: function() {
+     uni.showShareMenu({withShareTicket:true})
+    console.log("App Show");
+  },
+  onHide: function() {
+    console.log("App Hide");
+  }
+};
 </script>
 
-<style>
-	/*每个页面公共css */
+<style >
+@import "./common/uni.css";
+body {
+  /* background: linear-gradient(#007aff, #07396f, #609ad8); */
+  background: whitesmoke;
+  
+}
+page {
+  height: 100%;
+}
+uni-page-body {
+  height: 100%;
+  overflow: auto;
+}
 </style>

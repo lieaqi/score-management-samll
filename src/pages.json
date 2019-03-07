@@ -1,15 +1,33 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-app"
-			}
+	"pages": [{
+		"path": "pages/index/index",
+		"style": {
+			"navigationBarTitleText": "成绩管理"
 		}
-	],
+	}, {
+		"path": "pages/exams/index",
+		"style": {
+			"navigationBarTitleText": "考试管理"
+		}
+	}, {
+		"path": "pages/students/index",
+		"style": {
+			"navigationBarTitleText": "学生详情"
+		}
+	}, {
+		"path": "pages/set/index",
+		"style": {
+			"navigationBarTitleText": "用户设置"
+		}
+	}, {
+		"path": "pages/trend/index",
+		"style": {
+			"navigationBarTitleText": "成绩趋势"
+		}
+	}],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
+		"navigationBarTitleText": "成绩管理",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	}

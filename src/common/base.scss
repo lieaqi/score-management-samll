@@ -1,0 +1,48 @@
+.c-flex {
+    display: flex;
+}
+
+.c-flex-c {
+    @extend .c-flex;
+    flex-direction: column
+}
+
+@for $i from 0 through 4 {
+    .flex-#{$i} {
+        flex: $i;
+    }
+}
+
+.flex-center {
+    @extend .c-flex;
+    justify-content: center
+}
+
+@each $direction in left,
+right,
+top,
+bottom {
+    @for $num from 0 through 4 {
+        .m-#{$direction}-#{$num*5} {
+            margin-#{$direction}: $num * 5upx;
+        }
+    }
+}
+
+@for $i from 1 through 4 {
+    .ellipsis-#{$i} {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: $i;
+    }
+}
+
+@for $i from 0 through 4 {
+    @for $j from 0 through 4 {
+        .margin-#{$i*5}-#{$j*5} {
+            margin: $i *5px $j * 5px;
+        }
+    }
+}
