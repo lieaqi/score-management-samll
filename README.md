@@ -1,29 +1,14 @@
-# score-management-samll
+# 学生成绩管理
 
 ## Project setup
-```
-yarn install
-```
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
+npm install
 
-### Compiles and minifies for production
-```
-yarn run build
-```
+### Compiles and hot-reloads for H5
 
-### Run your tests
-```
-yarn run test
-```
+npm run serve
 
-### Lints and fixes files
-```
-yarn run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Compiles and minifies for 微信
+
+npm run dev:mp-weixin
